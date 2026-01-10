@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **A comprehensive overview of the mechanisms underlying LLM multi-step reasoning, spanning from implicit latent reasoning to explicit chain-of-thought reasoning.** [[PDF]](YOUR_PDF_LINK_HERE)
+> **A comprehensive overview of the mechanisms underlying LLM multi-step reasoning, spanning from implicit latent reasoning to explicit chain-of-thought reasoning.** [[PDF]](A_Survey_on_the_Mechanisms_of_Multi-Step_Reasoning_in_LLMs.pdf)
 
 ## 📖 Table of Contents
 
@@ -24,7 +24,7 @@
 
 ## 📖 Overview
 
-![Cognitive Framework](assets/overview.png)
+![Cognitive Framework](overview.png)
 
 Large Language Models (LLMs) have demonstrated remarkable abilities to solve problems requiring multiple reasoning steps. Unlike existing surveys that primarily focus on engineering methods to enhance performance, this survey provides a comprehensive overview of the **mechanisms** underlying LLM multi-step reasoning.
 
