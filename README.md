@@ -19,7 +19,7 @@
     - [When and Where CoT Helps](#when-and-where-cot-helps)
     - [Internal Computation Remodeling](#internal-computation-remodeling)
     - [Why CoT Enhances Reasoning](#why-cot-enhances-reasoning)
-    - [Explainability](#explainability)
+    - [CoT Explainability](#explainability)
   - [3. Future Research Directions](#3-future-research-directions)
 
 ## 📖 Overview
@@ -36,23 +36,24 @@ We organize the survey around a cognitive framework comprising seven interconnec
 
 ## 🏷 Taxonomy & Framework
 
-To help navigate the paper list, we categorize studies based on the two primary paradigms of reasoning mechanisms discussed in the survey:
+To help navigate the paper list, we organize studies around the **seven interconnected Research Questions (RQs)** proposed in our survey:
 
 ### 🧠 Implicit Reasoning
 
-The process where multi-hop inference is performed entirely within the model's hidden activations, delivering a correct final answer without verbalizing intermediate steps. Key areas include:
+The process where multi-hop inference is performed entirely within the model's hidden activations.
 
-- **Latent Thought**: How intermediate results are computed layer-by-layer.
-- **Grokking**: The phase transition from memorization to generalization.
-- **Shortcuts**: Reliance on statistical correlations rather than true reasoning.
+- **RQ1: What are the internal mechanisms of latent multi-step reasoning?**
+- **RQ2: How latent multi-step reasoning capability is acquired during training?**
+- **RQ3: To what extent does multi-step reasoning rely on shortcuts?**
 
 ### 🗣️ Explicit Reasoning
 
-The process where the model externalizes the reasoning process into a sequence of natural language tokens (Chain-of-Thought). Key areas include:
+The process where the model externalizes the reasoning process into a sequence of natural language tokens (Chain-of-Thought).
 
-- **Verbalized Thought**: Using generated tokens as external memory.
-- **Iteration Heads**: Mechanisms for carrying forward information.
-- **Faithfulness**: The disconnect between generated rationales and internal computation.
+- **RQ4: Where and When Does CoT Help?**
+- **RQ5: How Does Chain-of-Thought Remodel Internal Computation?**
+- **RQ6: Why CoT Enhances Reasoning Abilities?**
+- **RQ7: Does Chain-of-Thought Equate to Explainability?**
 
 ---
 
@@ -60,7 +61,7 @@ The process where the model externalizes the reasoning process into a sequence o
 
 ### 1. Implicit Multi-Step Reasoning
 
-#### Internal Mechanisms
+#### RQ1: What are the internal mechanisms of latent multi-step reasoning?
 
 | Paper                                                        |    Venue     | Year |                             Link                             |
 | :----------------------------------------------------------- | :----------: | :--: | :----------------------------------------------------------: |
@@ -78,7 +79,7 @@ The process where the model externalizes the reasoning process into a sequence o
 | **How Do LLMs Perform Two-Hop Reasoning in Context?**        |    ArXiv     | 2025 |      [Link](https://doi.org/10.48550/arXiv.2502.13913)       |
 | **Reasoning with Latent Thoughts: On the Power of Looped Transformers** |     ICLR     | 2025 |      [Link](https://openreview.net/forum?id=din0lGfZFd)      |
 
-#### Training Acquisition
+#### RQ2: How latent multi-step reasoning capability is acquired during training?
 
 | Paper                                                        |  Venue  | Year |                        Link                        |
 | :----------------------------------------------------------- | :-----: | :--: | :------------------------------------------------: |
@@ -92,7 +93,7 @@ The process where the model externalizes the reasoning process into a sequence o
 | **Language models can learn implicit multi-hop reasoning, but only if they have lots of training data** |  ArXiv  | 2025 | [Link](https://doi.org/10.48550/arXiv.2505.17923)  |
 | **Where to find Grokking in LLM Pretraining? Monitor Memorization-to-Generalization without Test** |  ArXiv  | 2025 | [Link](https://doi.org/10.48550/arXiv.2506.21551)  |
 
-#### Shortcuts
+#### RQ3: To what extent does multi-step reasoning rely on shortcuts?
 
 | Paper                                                        |     Venue      | Year |                            Link                             |
 | :----------------------------------------------------------- | :------------: | :--: | :---------------------------------------------------------: |
@@ -105,7 +106,7 @@ The process where the model externalizes the reasoning process into a sequence o
 
 ### 2. Explicit Multi-Step Reasoning
 
-#### When and Where CoT Helps
+#### RQ4: Where and When Does CoT Help?
 
 | Paper                                                        |     Venue      | Year |                             Link                             |
 | :----------------------------------------------------------- | :------------: | :--: | :----------------------------------------------------------: |
@@ -125,7 +126,7 @@ The process where the model externalizes the reasoning process into a sequence o
 | **Deciphering the Factors Influencing the Efficacy of Chain-of-Thought: Probability, Memorization, and Noisy Reasoning** | EMNLP Findings | 2024 | [Link](https://doi.org/10.18653/v1/2024.findings-emnlp.212)  |
 | **Analyzing Chain-of-Thought Prompting in Large Language Models via Gradient-based Feature Attributions** |     ArXiv      | 2023 |      [Link](https://doi.org/10.48550/arXiv.2307.13339)       |
 
-#### Internal Computation Remodeling
+#### RQ5: How Does Chain-of-Thought Remodel Internal Computation?
 
 | Paper                                                        |  Venue  | Year |                             Link                             |
 | :----------------------------------------------------------- | :-----: | :--: | :----------------------------------------------------------: |
@@ -140,7 +141,7 @@ The process where the model externalizes the reasoning process into a sequence o
 | **Arithmetic Without Algorithms: Language Models Solve Math with a Bag of Heuristics** |  ICLR   | 2025 |      [Link](https://openreview.net/forum?id=O9YTt26r2P)      |
 | **Chain-of-Thought Reasoning In The Wild Is Not Always Faithful** |  ArXiv  | 2025 |      [Link](https://doi.org/10.48550/arXiv.2503.08679)       |
 
-#### Why CoT Enhances Reasoning
+#### RQ6: Why Does CoT Enhance Reasoning Abilities?
 
 | Paper                                                        |  Venue  | Year |                             Link                             |
 | :----------------------------------------------------------- | :-----: | :--: | :----------------------------------------------------------: |
@@ -159,7 +160,7 @@ The process where the model externalizes the reasoning process into a sequence o
 | **Training Nonlinear Transformers for Chain-of-Thought Inference: A Theoretical Generalization Analysis** |  ICLR   | 2025 |      [Link](https://openreview.net/forum?id=n7n8McETXw)      |
 | **Rethinking External Slow-Thinking: From Snowball Errors to Probability of Correct Reasoning** |  ICML   | 2025 |      [Link](https://openreview.net/forum?id=lAjj22UxZy)      |
 
-#### Explainability
+#### RQ7: Does Chain-of-Thought Equate to Explainability?
 
 | Paper                                                        |  Venue  | Year |                             Link                             |
 | :----------------------------------------------------------- | :-----: | :--: | :----------------------------------------------------------: |
@@ -176,28 +177,17 @@ The process where the model externalizes the reasoning process into a sequence o
 | **Arithmetic Without Algorithms: Language Models Solve Math with a Bag of Heuristics** |  ICLR   | 2025 |      [Link](https://openreview.net/forum?id=O9YTt26r2P)      |
 | **On the Hardness of Faithful Chain-of-Thought Reasoning in Large Language Models** |  ArXiv  | 2024 |      [Link](https://doi.org/10.48550/arXiv.2406.10625)       |
 
-### 3. Future Research Directions
+## Reference
 
-#### Future Research Directions
+Please cite the paper in the following format if you use this survey during your research.
 
-| Paper                                                        |       Venue        | Year |                             Link                             |
-| :----------------------------------------------------------- | :----------------: | :--: | :----------------------------------------------------------: |
-| **Causally-Enhanced Reinforcement Policy Optimization**      |       ArXiv        | 2025 |      [Link](https://doi.org/10.48550/arXiv.2509.23095)       |
-| **Eliciting Chain-of-Thought in Base LLMs via Gradient-Based Representation Optimization** |        AAAI        | 2026 |           [Link](https://arxiv.org/abs/2511.19131)           |
-| **Markovian Agents for Informative Language Modeling**       |       ArXiv        | 2024 |      [Link](https://doi.org/10.48550/arXiv.2404.18988)       |
-| **X-Node: Self-explanation is All We Need**                  |     RIME/GRAIL     | 2025 |     [Link](https://doi.org/10.1007/978-3-032-06103-4_18)     |
-| **Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning** |       ArXiv        | 2025 |      [Link](https://doi.org/10.48550/arXiv.2505.16782)       |
-| **Implicit Reasoning in Large Language Models: A Comprehensive Survey** |       ArXiv        | 2025 |      [Link](https://doi.org/10.48550/arXiv.2509.02350)       |
-| **Training Large Language Models to Reason in a Continuous Latent Space** |       ArXiv        | 2024 |      [Link](https://doi.org/10.48550/arXiv.2412.06769)       |
-| **Compositional Chain-of-Thought Prompting for Large Multimodal Models** |        CVPR        | 2024 |     [Link](https://doi.org/10.1109/CVPR52733.2024.01367)     |
-| **CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation** |       ArXiv        | 2025 |      [Link](https://doi.org/10.48550/arXiv.2502.21074)       |
-| **Uncovering Latent Chain of Thought Vectors in Language Models** |       ArXiv        | 2024 |      [Link](https://doi.org/10.48550/arXiv.2409.14026)       |
-| **Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation** |        ICLR        | 2025 |      [Link](https://openreview.net/forum?id=jxo70B9fQo)      |
-| **Do Latent Tokens Think? A Causal and Adversarial Analysis of Chain-of-Continuous-Thought** |       ArXiv        | 2025 |           [Link](https://arxiv.org/abs/2512.21711)           |
-| **Model Utility Law: Evaluating LLMs beyond Performance through Mechanism Interpretable Metric** |       ArXiv        | 2025 |           [Link](https://arxiv.org/abs/2504.07440)           |
-| **Do Large Language Models Perform Latent Multi-Hop Reasoning without Exploiting Shortcuts?** |    ACL Findings    | 2025 |   [Link](https://aclanthology.org/2025.findings-acl.205/)    |
-| **A Pragmatic Vision for Interpretability**                  | AI Alignment Forum | 2025 | [Link](https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability) |
-| **How Can Interpretability Researchers Help AGI Go Well?**   |     LessWrong      | 2025 | [Link](https://www.lesswrong.com/posts/MnkeepcGirnJn736j/how-can-interpretability-researchers-help-agi-go-well) |
-| **Taxonomy, Opportunities, and Challenges of Representation Engineering for Large Language Models** |        TMLR        | 2025 |      [Link](https://openreview.net/forum?id=2U1KIfmaU9)      |
-| **An Investigation of Neuron Activation as a Unified Lens to Explain Chain-of-Thought Eliciting Arithmetic Reasoning of LLMs** |        ACL         | 2024 |    [Link](https://doi.org/10.18653/v1/2024.acl-long.387)     |
-| **Investigating Multi-Hop Factual Shortcuts in Knowledge Editing of Large Language Models** |        ACL         | 2024 |    [Link](https://doi.org/10.18653/v1/2024.acl-long.486)     |
+```bibtex
+@article{pan2026opening,
+  title={Opening the Black Box: A Survey on the Mechanisms of Multi-Step Reasoning in Large Language Models},
+  author={Pan, Liangming and Liang, Jason and Ye, Jiaran and Yang, Minglai and Lu, Xinyuan and Zhu, Fengbin},
+  year={2026},
+  publisher={Preprints}
+}
+
+## Q&A
+If you encounter any problem, please either directly contact the [Liangming Pan](liangmingpan@pku.edu.cn) or leave an issue in the github repo.
