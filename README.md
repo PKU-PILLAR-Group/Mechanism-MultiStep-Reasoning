@@ -20,7 +20,6 @@
     - [Internal Computation Remodeling](#internal-computation-remodeling)
     - [Why CoT Enhances Reasoning](#why-cot-enhances-reasoning)
     - [CoT Explainability](#explainability)
-  - [3. Future Research Directions](#3-future-research-directions)
 
 ## 📖 Overview
 
@@ -188,6 +187,7 @@ Please cite the paper in the following format if you use this survey during your
   year={2026},
   publisher={Preprints}
 }
+```
 
 ## Q&A
 If you encounter any problem, please either directly contact the [Liangming Pan](liangmingpan@pku.edu.cn) or leave an issue in the github repo.
