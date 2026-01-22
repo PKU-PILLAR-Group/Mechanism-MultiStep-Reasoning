@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **A comprehensive overview of the mechanisms underlying LLM multi-step reasoning, spanning from implicit latent reasoning to explicit chain-of-thought reasoning.** [[PDF]](A_Survey_on_the_Mechanisms_of_Multi-Step_Reasoning_in_LLMs.pdf)
+> **A comprehensive overview of the mechanisms underlying LLM multi-step reasoning, spanning from implicit latent reasoning to explicit chain-of-thought reasoning.** [[PDF]](https://arxiv.org/abs/2601.14270)
 
 ## 📖 Table of Contents
 
