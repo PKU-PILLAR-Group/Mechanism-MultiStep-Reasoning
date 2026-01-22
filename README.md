@@ -181,11 +181,12 @@ The process where the model externalizes the reasoning process into a sequence o
 Please cite the paper in the following format if you use this survey during your research.
 
 ```bibtex
-@article{pan2026opening,
+@article{pan2026openingblackboxsurvey,
   title={Opening the Black Box: A Survey on the Mechanisms of Multi-Step Reasoning in Large Language Models},
   author={Pan, Liangming and Liang, Jason and Ye, Jiaran and Yang, Minglai and Lu, Xinyuan and Zhu, Fengbin},
   year={2026},
-  publisher={Preprints}
+  journal={arXiv preprint arXiv:2601.14270},
+  url={https://arxiv.org/abs/2601.14270}
 }
 ```
 
